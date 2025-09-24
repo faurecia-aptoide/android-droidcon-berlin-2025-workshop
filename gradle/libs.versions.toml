@@ -1,0 +1,122 @@
+[versions]
+agp = "8.11.1"
+datastorePreferences = "1.1.7"
+kotlin = "2.0.21"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+kotlinxCoroutinesAndroid = "1.10.2"
+lifecycleRuntimeKtx = "2.9.2"
+activityCompose = "1.10.1"
+composeBom = "2025.07.00"
+koin = "4.1.0"
+appcompat = "1.7.1"
+# currently only 1.2.0 is guaranteed to work
+carApp = "1.2.0"
+material = "1.12.0"
+material3 = "1.4.0-beta02"
+material-adaptive = "1.2.0-alpha11"
+unifiedpush = "3.0.10"
+volley = "1.2.1"
+tinkWebpush = "1.12.2"
+gson = "2.13.1"
+workRuntimeKtx = "2.10.3"
+media3 = "1.8.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+material3-adaptive-layout-android = { module = "androidx.compose.material3.adaptive:adaptive-layout-android", version.ref = "material-adaptive" }
+material3-adaptive-navigation-android = { module = "androidx.compose.material3.adaptive:adaptive-navigation-android", version.ref = "material-adaptive" }
+koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+koin-androidx-viewmodel = { group = "io.insert-koin", name = "koin-compose-viewmodel", version.ref = "koin" }
+koin-androidx-viewmodel-navigation = { group = "io.insert-koin", name = "koin-compose-viewmodel-navigation", version.ref = "koin" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+androidx-car-app = { group = "androidx.car.app", name = "app", version.ref = "carApp" }
+unifiedpush = { group = "org.unifiedpush.android", name = "connector", version.ref = "unifiedpush" }
+volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
+tink-webpush = { group = "com.google.crypto.tink", name = "apps-webpush", version.ref = "tinkWebpush" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+androidx-work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workRuntimeKtx" }
+androidx-car-app-automotive = { group = "androidx.car.app", name = "app-automotive", version.ref = "carApp" }
+androidx-compose-material-icons = { module = "androidx.compose.material:material-icons-extended" }
+androidx-media3-common = { group = "androidx.media3", name = "media3-common", version.ref = "media3" }
+androidx-media3-ui = { group = "androidx.media3", name = "media3-ui", version.ref = "media3" }
+androidx-media3-exoplayer = { group = "androidx.media3", name = "media3-exoplayer", version.ref = "media3" }
+androidx-media3-mediasession = { group = "androidx.media3", name = "media3-session", version.ref = "media3" }
+
+[bundles]
+compose = [
+    "androidx-compose-bom",
+    "androidx-compose-material-icons",
+    "androidx-ui",
+    "androidx-ui-graphics",
+    "androidx-ui-tooling",
+    "androidx-ui-tooling-preview",
+    "material3",
+    "material3-adaptive-layout-android",
+    "material3-adaptive-navigation-android"
+]
+
+compose-testing = [
+    "androidx-ui-test-junit4",
+    "androidx-ui-test-manifest"
+]
+
+androidx = [
+    "androidx-core-ktx",
+    "androidx-lifecycle-runtime-ktx",
+    "androidx-activity-compose"
+]
+
+testing = [
+    "junit",
+    "androidx-junit",
+    "androidx-espresso-core"
+]
+
+car = [
+    "androidx-car-app",
+    "androidx-car-app-automotive",
+    "androidx-media3-common",
+    "androidx-media3-ui",
+    "androidx-media3-exoplayer",
+    "androidx-media3-mediasession"
+]
+
+koin = [
+    "koin-core",
+    "koin-android",
+    "koin-compose",
+    "koin-androidx-viewmodel",
+    "koin-androidx-viewmodel-navigation"
+]
+
+debug-compose = [
+    "androidx-ui-tooling",
+    "androidx-ui-test-manifest"
+]
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

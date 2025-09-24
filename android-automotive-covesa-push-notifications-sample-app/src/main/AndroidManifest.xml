@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".PushSampleApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeveloperWorkshop">
+        <activity
+            android:name=".presentation.PushNotificationsSampleActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DeveloperWorkshop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.forvia.droidcon.developerworkshop.android_automotive_covesa_push_notifications_sample.data.push.PushServiceImpl"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="global.covesa.sdk.PUSH_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="global.covesa.sdk.api.client.internal.PushReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.unifiedpush.android.connector.MESSAGE" />
+                <action android:name="org.unifiedpush.android.connector.UNREGISTERED" />
+                <action android:name="org.unifiedpush.android.connector.NEW_ENDPOINT" />
+                <action android:name="org.unifiedpush.android.connector.REGISTRATION_FAILED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.forvia.droidcon.developerworkshop.android_automotive_covesa_push_notifications_sample.data.push.PushTriggerBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.forvia.droidcon.SEND_PUSH" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
