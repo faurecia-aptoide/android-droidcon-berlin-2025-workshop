@@ -140,5 +140,13 @@ Build > Generate signed App Bundle or APK, and create a signature if you do not 
 
 <img width="1242" height="232" alt="Screenshot 2025-09-25 at 15 28 18" src="https://github.com/user-attachments/assets/b8c078e3-de6d-4344-a54c-708f1af3e409" />
 
-7. Upload the app!
+7. Upload images
+
+App icon ![screenshot02](https://github.com/user-attachments/assets/da71d704-30ac-4bb9-b6c1-35642eb9f5ab)
+
+
+Screenshots ![screenshot01](https://github.com/user-attachments/assets/23e39d0d-ac1f-4113-8b99-b9758b2d5401)
+
+
+8. Upload the app!
 
