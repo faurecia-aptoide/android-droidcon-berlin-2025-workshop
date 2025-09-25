@@ -110,6 +110,11 @@ to the portal.
 ### Vehicle Properties
 [About](android-automotive-vehicle-properties-sample/README.md)
 
+
+### Additional resources
+* Sample app build in a [COVESA](https://covesa.global/)'s developer session: https://github.com/Quartettmobile/RoadGallery
+
+
 ## Developer Portal Submission
 
 ### APK signing
@@ -117,3 +122,23 @@ to the portal.
 Before you upload your app you need to build a signed release version, as the app store does not allow
 the publication of apps signed with debug signature. To do this you can use 
 Build > Generate signed App Bundle or APK, and create a signature if you do not already have one. 
+
+
+### Submitting your application
+
+1. The very first step is to... create a developer account! :D It's free, just head over to https://developers.appning.com
+   1. You will receive a confirmation email, and once that's done - our team can approve your account.
+2. Once you're logged in, head over to the "Upload" section under "Manage Apps" > "Apps".
+3. Input the package name of your app. Remember, your APK must have a unique package name (and it must not be a debug build).
+<img width="1242" height="273" alt="Screenshot 2025-09-25 at 15 21 50" src="https://github.com/user-attachments/assets/26c32852-04c0-40fa-adac-e0f81049bb7e" />
+
+4. Now you will be redirected to a view where you can submit your app's metadata!
+5. As an important first step, make sure to set the app as a "Test App"!
+<img width="1242" height="232" alt="Screenshot 2025-09-25 at 15 23 19" src="https://github.com/user-attachments/assets/acbc11cd-8286-4512-a899-caac86f8bc22" />
+
+6. Add the remaining required metadata.
+
+<img width="1242" height="232" alt="Screenshot 2025-09-25 at 15 28 18" src="https://github.com/user-attachments/assets/b8c078e3-de6d-4344-a54c-708f1af3e409" />
+
+7. Upload the app!
+
